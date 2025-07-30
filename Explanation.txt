@@ -1,0 +1,15 @@
+Angular’s HttpClient and GET request flow (short)
+Angular’s HttpClientModule allows the app to make HTTP requests to external APIs or backends.
+
+Import HttpClientModule in app.module.ts so Angular can use HTTP services.
+
+Create a service (e.g., StudentService) and inject HttpClient into it.
+
+Use http.get('<URL>') to send a GET request to the backend. This returns an Observable.
+
+Subscribe to the Observable (in a component like StudentListComponent) to receive the response data.
+
+Display the data in the component template using Angular directives like *ngFor.
+
+Flow:
+Angular → HttpClient GET → Backend API (Node.js) → Data from Database → Angular displays it.
